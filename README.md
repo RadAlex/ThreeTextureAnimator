@@ -20,7 +20,7 @@ Just in case, line 124 is where it happens:
 # How to use:
 1. import TextureAnimator class into your module and instanciate like so:
 ```
-tex = THREE.ImageUtils.loadTexture("images/textures/tst/tst.png");
+tex = ImageUtils.loadTexture("images/textures/tst/tst.png");
 
 let sheetAnimation = new TextureAnimator({
             texture: tex, // texture sheet, passed by ref
@@ -50,6 +50,6 @@ sheetAnimation.reset();
 sheetAnimation.play();
 ```
 
-3. You would probably have to adjust the play and pause functions to your implementation. The loop parameter is an object, shich calls tick() on every object... well, every 'tick'!
+3. You would probably have to adjust the `play()` and `pause()` functions to your implementation. The loop parameter is an object, which calls `tick()` on every object... well, every `tick`!
 
 If you find any bugs, or have any suggestions on how to optimize this, welcome to create a pull request!
