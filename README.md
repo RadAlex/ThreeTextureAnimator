@@ -3,6 +3,11 @@ A simple JS class to implement animation on spritesheets.
 This class actually is agnostic of three, it doesn't know what three is.
 So you can actually adjust it to any other engine, but you'd have to adjust the offset functions in `tick()`, of course.
 
+# Note
+This class expects sprite sheet starting from upper-left corner (three wants it from lower-left corner).
+Just in case, line 124 is where it happens:
+```let currentRow = this.tilesY - 1 - Math.floor(this.currentTile / this.tilesX);```
+
 # Features:
 1. Play/Pause
 2. Reset, resets to start tile
