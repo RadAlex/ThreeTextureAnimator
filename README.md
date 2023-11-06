@@ -12,7 +12,7 @@ Just in case, line 124 is where it happens:
 2. Reset, resets to start tile
 3. Freeze animation at the end (play once)
 4. Show specific tile
-5. Play specific range
+5. Play specific range (if first value is bigger than the second, class will convert to playReverse automatically, even if playReverse flag is false )
 6. Play reverse
 7. Play every nth frame (plus optionally compensate for nth delay, if you want to keep animation speed)
    
