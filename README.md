@@ -1,6 +1,6 @@
 # What?
 A simple JS class to implement animation on spritesheets in ThreeJS rendering engine. 
-This class actually is agnostic of three, it doesn't know what ThreeJS is, so you can adjust it to any other engine, but you'd have to adjust the offset functions in `tick()`, of course.
+This class actually is agnostic of three, it doesn't know what ThreeJS is, so you can adjust it to any other engine, but you'd have to adjust `tick()`-related functions, of course.
 
 # Note
 This class expects sprite sheet starting from upper-left corner (three wants it from lower-left corner).
