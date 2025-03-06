@@ -21,7 +21,8 @@ Just in case, line 124 is where it happens:
 ```
 tex = ImageUtils.loadTexture("images/textures/tst/tst.png");
 
-let sheetAnimation = new TextureAnimator({
+let sheetAnimation = new TextureAnimator();
+sheetAnimation.init({
             texture: tex, // texture sheet, passed by ref
             tilesX: 14, // tile count in x
             tilesY: 14, // tile count in y
@@ -43,7 +44,7 @@ let planeGeo = new PlaneGeometry();
 const sheetMaterial = new MeshBasicMaterial({ map: tex });
 let planeMesh = new Mesh(planeGeo, sheetMaterial);
 
-plane.material = sheetMaterial;
+planeMesh.material = sheetMaterial;
 scene.add(planeMesh);
 sheetAnimation.reset();
 sheetAnimation.play();
